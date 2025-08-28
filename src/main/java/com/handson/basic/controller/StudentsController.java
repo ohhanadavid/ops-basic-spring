@@ -88,7 +88,7 @@ public class StudentsController {
         return new ResponseEntity<>(studentService.findById(id), HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/highSat", method = RequestMethod.GET)
+    @RequestMapping(value = "/highSat1", method = RequestMethod.GET)
     public ResponseEntity<?> getHighSatStudents1(@RequestParam Integer sat)
     {
         return new ResponseEntity<>(studentService.getStudentWithSatHigherThan(sat), HttpStatus.OK);
